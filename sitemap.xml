@@ -10,7 +10,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Page Blog -->
+  <!-- Page Blog OK -->
   <url>
     <loc>https://www.crm.safe-digitalisation.fr/blog/index</loc>
     <lastmod>2026-06-18</lastmod>
@@ -46,7 +46,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Article 4 : RGPD -->
+  <!-- Article 4 : RGPD  OK -->
   <url>
     <loc>https://www.safe-digitalisation.fr/blog/erreurs-courantes-rgpd-cnil</loc>
     <lastmod>2026-06-18</lastmod>
