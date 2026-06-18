@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog C@NDY | Cybersécurité & Conformité Santé | S@FE Digitalisation</title>
+    <meta name="description" content="Découvrez nos derniers articles sur la cybersécurité, la NIS2, le RGPD et la certification HDS pour les professionnels de santé.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
+    <style>
+        /* --- VARIABLES (Charte C@NDY) --- */
+        :root {
+            --primary-pink: #e91e63;
+            --secondary-pink: #fce4ec;
+            --accent-prune: #880e4f;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --bg-soft: #fff0f5;
+            --border-radius: 16px;
+            --shadow-soft: 0 8px 24px rgba(233, 30, 99, 0.08);
+            --shadow-hover: 0 12px 32px rgba(233, 30, 99, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg-soft);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 15px rgba(233, 30, 99, 0.05);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-prune);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--primary-pink); }
+
+        .btn-cta-header {
+            background: var(--primary-pink);
+            color: var(--white) !important;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        .btn-cta-header:hover {
+            background: var(--accent-prune);
+            transform: translateY(-2px);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--secondary-pink) 0%, var(--white) 100%);
+            border-bottom: 1px solid rgba(233, 30, 99, 0.1);
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: var(--accent-prune);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* --- BLOG GRID --- */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--shadow-hover), transform 0.3s ease;
+            border: 1px solid rgba(233, 30, 99, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-badge {
+            display: inline-block;
+            background: var(--secondary-pink);
+            color: var(--accent-prune);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            align-self: flex-start;
+        }
+
+        .card-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--accent-prune);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .card-excerpt {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-pink);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: gap 0.3s;
+        }
+
+        .card-link:hover {
+            gap: 5px;
+            color: var(--accent-prune);
+        }
+
+        .card-link::after {
+            content: '→';
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+
+        .card-link:hover::after {
+            transform: translateX(3px);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--accent-prune);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        footer a { color: var(--secondary-pink); text-decoration: underline; }
+
+        /* --- MOBILE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .blog-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; } /* Pour simplifier, menu caché sur mobile */
+            .logo { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-content">
+            <a href="/" class="logo">S@FE <span style="font-family:'DM Sans'; font-weight:400; color:#666; font-size:1.2rem; margin-left:5px;">Candy</span></a>
+            <nav class="nav-links">
+                <a href="/blog-index.html">Accueil</a>
+                <a href="#articles">Articles</a>
+                <a href="https://crm.safe-digitalisation.fr/Candy/" class="btn-cta-header">Essayer C@NDY</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expertise Cybersécurité Santé</h1>
+            <p>Des ressources claires et sécurisées pour les professionnels de santé. Conformité NIS2, RGPD, HDS et gestion des risques.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <main class="container" id="articles">
+        <div class="blog-grid">
+
+            <!-- Article 1: Ransomware -->
+            <article class="blog-card">
+                <span class="card-badge">Cybersécurité</span>
+                <h2 class="card-title">Plan de reprise d'activité hospitalière suite à une attaque de ransomware</h2>
+                <p class="card-excerpt">Guide 2026 : Comment mettre en place un PRA robuste après une cyberattaque. Protégez la continuité de vos soins.</p>
+                <a href="blog/plan-reprise-activite-hospitaliere-ransomware.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 2: NIS2 -->
+            <article class="blog-card">
+                <span class="card-badge">Conformité</span>
+                <h2 class="card-title">Obligations de conformité NIS2 pour les entités de soins de santé</h2>
+                <p class="card-excerpt">La directive NIS2 impose de nouvelles exigences. Découvrez ce qui change pour votre établissement et vos obligations.</p>
+                <a href="blog/obligations-conformite-nis2-sante.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 3: IoMT -->
+            <article class="blog-card">
+                <span class="card-badge">Technologie</span>
+                <h2 class="card-title">Sécurité de l'Internet des objets médicaux pour les dispositifs connectés</h2>
+                <p class="card-excerpt">Les dispositifs IoMT multiplient les risques. Comment sécuriser vos pacemakers, pompes et scanners connectés ?</p>
+                <a href="blog/securite-internet-objets-medicaux.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 4: RGPD -->
+            <article class="blog-card">
+                <span class="card-badge">RGPD</span>
+                <h2 class="card-title">Erreurs courantes du RGPD/CNIL à éviter dans votre cabinet</h2>
+                <p class="card-excerpt">Les 5 pièges fréquents en matière de protection des données patients et comment les éviter grâce à C@NDY.</p>
+                <a href="blog/erreurs-courantes-rgpd-cnil.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 5: IA Médicale -->
+            <article class="blog-card">
+                <span class="card-badge">Réglementation</span>
+                <h2 class="card-title">Loi européenne sur l'IA pour l'IA médicale : l'AI Act expliqué</h2>
+                <p class="card-excerpt">Comprendre l'impact de l'AI Act sur les dispositifs médicaux. Risques, conformité et éthique de l'IA.</p>
+                <a href="blog/loi-europeenne-ia-medical.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 6: HDS -->
+            <article class="blog-card">
+                <span class="card-badge">Sécurité</span>
+                <h2 class="card-title">Guide de certification HDS : Protéger vos données de santé</h2>
+                <p class="card-excerpt">Tout savoir sur la certification HDS. Normes, démarche, coûts et rôle des CRM certifiés.</p>
+                <a href="blog/guide-certification-hds.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 7: Audit DPI -->
+            <article class="blog-card">
+                <span class="card-badge">Audit</span>
+                <h2 class="card-title">Méthodologie d'audit DPI : Sécuriser le Dossier Patient Informatisé</h2>
+                <p class="card-excerpt">Guide méthodologique pour auditer la sécurité de votre DPI. Tests d'intrusion et conformité RGPD.</p>
+                <a href="blog/methode-audit-dpi.html" class="card-link">Lire l'article</a>
+            </article>
+
+            <!-- Article 8: Zero Trust -->
+            <article class="blog-card">
+                <span class="card-badge">Architecture</span>
+                <h2 class="card-title">Confiance Zéro (Zero Trust) dans les hôpitaux modernes</h2>
+                <p class="card-excerpt">Pourquoi le modèle Zero Trust est la solution idéale pour sécuriser les accès et les réseaux hospitaliers.</p>
+                <a href="blog/confiance-zero-hopitaux.html" class="card-link">Lire l'article</a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 S@FE Digitalisation - Tous droits réservés.</p>
+            <p style="margin-top:10px; font-size:0.9rem;">
+                <a href="/sitemap.xml">Plan du site</a> | 
+                <a href="/mentions-legales.html">Mentions Légales</a> | 
+                <a href="https://crm.safe-digitalisation.fr/Candy/">Accéder au CRM C@NDY</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
