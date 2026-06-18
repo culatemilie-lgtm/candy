@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.crm.safe-digitalisation.fr/candy/index</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page Blog -->
+  <url>
+    <loc>https://www.crm.safe-digitalisation.fr/blog/index</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Article 1 : Ransomware -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/plan-reprise-activite-hospitaliere-ransomware.thml</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.safe-digitalisation.fr/images/ransomware-hospital.jpg</image:loc>
+      <image:title>Plan de reprise d'activité hospitalière</image:title>
+    </image:image>
+  </url>
+
+  <!-- Article 2 : NIS2 -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/obligations-conformite-nis2-sante.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 3 : IoMT -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/securite-internet-objets-medicaux</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 4 : RGPD -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/erreurs-courantes-rgpd-cnil</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 5 : IA Médicale -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/loi-europeenne-ia-medical</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 6 : Certification HDS -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/guide-certification-hds</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 7 : Audit DPI -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/methode-audit-dpi</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 8 : Zero Trust -->
+  <url>
+    <loc>https://www.safe-digitalisation.fr/blog/confiance-zero-hopitaux</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Page Contact / CTA -->
+  <url>
+    <loc>https://crm.safe-digitalisation.fr/Candy/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
